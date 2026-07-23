@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project #1 - 디지털 시계 & 알람</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="card-header">
+        <!-- 피드백 반영: 시맨틱 계층구조에 맞춘 h1 사용 -->
+        <h1 class="card-title">Project #1: 디지털 시계 & 알람</h1>
+        <!-- FR5(나만의 기능): 테마 변경 버튼 -->
+        <button id="theme-toggle-btn" class="btn btn-secondary">🌓 테마 변경</button>
+      </div>
+
+      <!-- FR1: 배터리 상태 표시 -->
+      <div class="battery-wrapper">
+        <span class="battery-label">배터리:</span>
+        <div class="battery-bar-container">
+          <div class="battery-bar" id="battery-bar"></div>
+        </div>
+        <span id="battery-text" class="battery-text">100%</span>
+        
+        <!-- 충전 편의 버튼 -->
+        <button id="charge-btn" class="btn btn-success hidden">⚡ 충전하기</button>
+      </div>
+
+      <!-- FR1 & FR2: 시계 화면 및 Blackout 영역 -->
+      <div class="clock-screen">
+        <div id="clock-display" class="clock-display">0000-00-00 00:00:00</div>
+        <div id="blackout-overlay" class="blackout-overlay hidden">
+          <p class="blackout-msg">⚠️ 배터리가 방전되었습니다.</p>
+        </div>
+      </div>
+
+      <!-- FR3: 알람 설정 폼 -->
+      <div class="alarm-form">
+        <h2 class="sub-title">알람 추가</h2>
+        <div class="input-group">
+          <input type="number" id="alarm-hour" min="0" max="23" placeholder="시 (0-23)">
+          <input type="number" id="alarm-min" min="0" max="59" placeholder="분 (0-59)">
+          <input type="number" id="alarm-sec" min="0" max="59" placeholder="초 (0-59)">
+          <button id="add-alarm-btn" class="btn btn-primary">추가</button>
+        </div>
+      </div>
+
+      <!-- FR4: 알람 현황 (최대 3개) -->
+      <div class="alarm-list-container">
+        <h2 class="sub-title">알람 현황 <span id="alarm-count" class="badge">0 / 3</span></h2>
+        <ul id="alarm-list" class="alarm-list"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="clock.js"></script>
+</body>
+</html>

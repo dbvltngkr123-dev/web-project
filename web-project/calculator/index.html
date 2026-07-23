@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project #2 - 계산기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1 class="card-title">Project #2: 계산기</h1>
+
+      <!-- FR2: 입력 상황 및 연산 결과 표시 -->
+      <div class="calc-display">
+        <div id="calc-expression" class="calc-expression"></div>
+        <div id="calc-result" class="calc-result">0</div>
+      </div>
+
+      <!-- FR1: 키패드 (이벤트 위임 활용) -->
+      <div class="calc-keypad" id="calc-keypad">
+        <button class="btn btn-action" data-action="clear">C</button>
+        <button class="btn btn-action" data-action="clear-entry">CE</button>
+        <button class="btn btn-action" data-action="delete">⌫</button>
+        <button class="btn btn-op" data-op="/">÷</button>
+
+        <button class="btn btn-num" data-num="7">7</button>
+        <button class="btn btn-num" data-num="8">8</button>
+        <button class="btn btn-num" data-num="9">9</button>
+        <button class="btn btn-op" data-op="*">×</button>
+
+        <button class="btn btn-num" data-num="4">4</button>
+        <button class="btn btn-num" data-num="5">5</button>
+        <button class="btn btn-num" data-num="6">6</button>
+        <button class="btn btn-op" data-op="-">-</button>
+
+        <button class="btn btn-num" data-num="1">1</button>
+        <button class="btn btn-num" data-num="2">2</button>
+        <button class="btn btn-num" data-num="3">3</button>
+        <button class="btn btn-op" data-op="+">+</button>
+
+        <button class="btn btn-num grid-span-2" data-num="0">0</button>
+        <button class="btn btn-num" data-num=".">.</button>
+        <button class="btn btn-equals" data-action="calculate">=</button>
+      </div>
+
+      <!-- FR5(나만의 기능): 계산 기록 -->
+      <div class="history-container">
+        <div class="history-header">
+          <h2 class="sub-title">계산 기록 (최근 5개)</h2>
+          <button id="clear-history-btn" class="btn-sm">기록 삭제</button>
+        </div>
+        <ul id="history-list" class="history-list"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="calc.js"></script>
+</body>
+</html>
