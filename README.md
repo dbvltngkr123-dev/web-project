@@ -8,10 +8,10 @@
 
 ## 🔗 Live Demo (배포 링크)
 
-GitHub Pages를 통해 실제 동작하는 페이지를 바로 확인할 수 있습니다.
+아래 링크를 클릭하면 GitHub Pages로 배포된 실제 웹 페이지로 이동합니다.
 
-* ⏰ **디지털 시계 & 알람**: [https://dbvltngkr123-dev.github.io/web-project/clock/](https://dbvltngkr123-dev.github.io/web-project/clock/)
-* 🧮 **웹 계산기**: [https://dbvltngkr123-dev.github.io/web-project/calculator/](https://dbvltngkr123-dev.github.io/web-project/calculator/)
+* ⏰ **디지털 시계 바로가기**: [https://dbvltngkr123-dev.github.io/web-project/clock/](https://dbvltngkr123-dev.github.io/web-project/clock/)
+* 🧮 **웹 계산기 바로가기**: [https://dbvltngkr123-dev.github.io/web-project/calculator/](https://dbvltngkr123-dev.github.io/web-project/calculator/)
 
 ---
 
