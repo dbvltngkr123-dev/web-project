@@ -2,45 +2,53 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>웹 프로젝트 모음</title>
-  <!-- 접속하자마자 자동으로 시계 화면으로 넘겨주는 설정 -->
-  <meta http-equiv="refresh" content="0; url=./clock/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 바닐라 JS 프로젝트</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f3f4f6;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      background: #f4f6f8;
-      margin: 0;
+      align-items: center;
+      min-height: 100vh;
     }
-    .box {
+    .card {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
       text-align: center;
+      max-width: 400px;
+      width: 90%;
     }
+    h1 { font-size: 1.5rem; color: #1f2937; margin-bottom: 0.5rem; }
+    p { color: #6b7280; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .btn-group { display: flex; flex-direction: column; gap: 10px; }
     .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
+      display: block;
+      padding: 12px 20px;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.2s;
     }
+    .btn-clock { background-color: #3b82f6; }
+    .btn-clock:hover { background-color: #2563eb; }
+    .btn-calc { background-color: #10b981; }
+    .btn-calc:hover { background-color: #059669; }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h2>🚀 바닐라 JS 프로젝트 메뉴</h2>
-    <p>잠시 후 시계 프로젝트로 자동 이동합니다...</p>
-    <div>
-      <a href="./clock/" class="btn" style="background-color: #2563eb;">⏰ 시계 보기</a>
-      <a href="./calculator/" class="btn" style="background-color: #10b981;">🧮 계산기 보기</a>
+  <div class="card">
+    <h1>🚀 웹 바닐라 JS 프로젝트</h1>
+    <p>아래에서 실행할 프로젝트를 선택해주세요!</p>
+    <div class="btn-group">
+      <!-- absolute path 사용으로 404 완벽 방지 -->
+      <a href="/web-project/clock/index.html" class="btn btn-clock">⏰ 디지털 시계 실행하기</a>
+      <a href="/web-project/calculator/index.html" class="btn btn-calc">🧮 웹 계산기 실행하기</a>
     </div>
   </div>
 </body>
