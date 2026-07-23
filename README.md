@@ -12,7 +12,6 @@
 
 아래 링크를 클릭하면 GitHub Pages로 배포된 실제 웹 페이지로 이동합니다.
 
-* 🚀 **프로젝트 메인 홈**: [https://dbvltngkr123-dev.github.io/web-project/](https://dbvltngkr123-dev.github.io/web-project/)
 * ⏰ **디지털 시계 바로가기**: [https://dbvltngkr123-dev.github.io/web-project/web-project/clock/](https://dbvltngkr123-dev.github.io/web-project/web-project/clock/)
 * 🧮 **웹 계산기 바로가기**: [https://dbvltngkr123-dev.github.io/web-project/web-project/calculator/](https://dbvltngkr123-dev.github.io/web-project/web-project/calculator/)
 
